@@ -1,0 +1,58 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(131,131,250,1) 0%, rgba(0,212,255,1) 100%);
+    padding: 0 2%;
+    margin: 0;
+}
+
+
+.container_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Ajustar la altura del contenedor */
+}
+.medio{
+    display: block;
+    flex-direction: column;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+.centro{
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+#borde{
+    padding: 4%;
+    border: 0 solid rgb(88, 88, 88);
+    border-radius: 20px;
+    background-color: rgba(248,248,255,0.3);
+}
+
+#div_r_comerciante{
+    display: none;
+}
+#div_r_comprador{
+    display: none;
+}
+
+.d_flex{
+    display: flex;
+}
+.d_block{
+    display: block;
+}
+
+#contenedor1{
+    display: flex;
+}
+@media screen and (max-width: 680px) {
+    #contenedor1{
+        display: block;
+    }
+}

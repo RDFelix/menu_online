@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="page_icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container_center">
+        <div id="borde">   
+            <h2 id="titulo_r">¿Como desea registrase?</h2>
+
+<!------REGISTRO DE COMERCIANTE----->
+            <div id="div_r_comerciante">
+                <div class="d_flex" id="contenedor1">
+                    <div class="d_block" style="margin: 10px;">
+
+                        <div class="d_flex">
+                            <div class="form-floating mb-3" style="margin-right: 5px; width: 100%;">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Nombres">
+                                <label for="floatingInput">Nombres</label>
+                            </div>
+                            <div class="form-floating mb-3" style="width: 100%;">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Apellidos">
+                                <label for="floatingInput">Apellidos</label>
+                            </div>
+                        </div>
+
+                    
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Local</span>
+                                <input type="text" class="form-control" placeholder="Nombre de la empresa" aria-label="Empresa" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Correo electronico" aria-label="Correo electronico" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                <span class="input-group-text" id="basic-addon3">
+                                    <select class="form-select" aria-label="Numero de indentificacion">
+                                        <option selected>Tipo de documento</option>
+                                        <option value="1">Ti</option>
+                                        <option value="2">Cc</option>
+                                        <option value="3">Pep</option>
+                                    </select>
+                                </span>
+                                <input type="text" class="form-control" id="basic-url"  placeholder="Numero de indentificacion" aria-describedby="basic-addon3 basic-addon4">
+                                </div>
+                            </div>
+
+                            
+                    </div>
+
+
+                    <div class="d_block" style="margin: 10px;">
+                    <div class="mb-3">
+                        <div class="input-group">
+                        <span class="input-group-text" id="basic-addon3">
+                            <select class="form-select" aria-label="Prrefijo telefonico">
+                                <option selected>Prefijo</option>
+                                <option value="1">310</option>
+                                <option value="2">311</option>
+                                <option value="4">312</option>
+                                <option value="5">313</option>
+                                <option value="6">314</option>
+                                <option value="7">315</option>
+                                <option value="8">316</option>
+                                <option value="9">317</option>
+                                <option value="10">318</option>
+                                <option value="11">319</option>
+                                <option value="12">320</option>
+                                <option value="13">321</option>
+                                <option value="12">322</option>
+                                <option value="13">323</option>
+                                <option value="12">324</option>
+                                <option value="13">325</option>
+                                <option value="12">326</option>
+                                <option value="13">327</option>
+                                <option value="12">328</option>
+                                <option value="13">329</option>
+                            </select>
+                        </span>
+                        <input type="number" class="form-control" id="basic-url" placeholder="Numero telefonico" aria-describedby="basic-addon3 basic-addon4">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <textarea class="form-control" placeholder="Descripcion de la empresa" aria-label="Descripcion"></textarea>
+                    </div>
+                    <label for="basic-url" class="form-label mb-3">¿Que productos ofrece tu empresa?</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" onclick="pass_eye()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16" id="show_eye" style="display: block;">
+                                <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                                <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16" id="hide_eye" style="display: none;">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg>
+                        </span>
+                        <input type="password" class="form-control" aria-label="Contraseña" placeholder="Contraseña" id="contraseña">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" aria-label="Contraseña" placeholder="Confirmar contraseña" id="confirmar_contraseña">
+                    </div>
+                    
+                        <div class="centro">
+                            <button type="button" class="btn btn-primary" onclick="ingresar_comerciante()">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+<!------REGISTRO DE COMPRADOR----->
+            <div id="div_r_comprador">
+                <div class="d_flex">
+                    <div class="form-floating mb-3" style="margin-right: 10px;">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombres">
+                        <label for="floatingInput">Nombres</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Apellidos">
+                        <label for="floatingInput">Apellidos</label>
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Correo electronico</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Telefono">
+                    <label for="floatingInput">Telefono</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Confirmar contraseña">
+                    <label for="floatingPassword">Confirmar contraseña</label>
+                </div>
+            </div>
+
+            <center>            
+                <button class="btn btn-primary mb-3" id="bt_r_comerciante" onclick="r_comerciante()">Registrar como comerciante</button>
+                <button class="btn btn-primary mb-3" id="bt_r_comprador" onclick="r_comprador()">Registrar como comprador</button>  
+            </center>
+            <a href="inicio_usuario.html" id="link_inicio"  style="display: none;">¿Ya estas registrado?</a>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>

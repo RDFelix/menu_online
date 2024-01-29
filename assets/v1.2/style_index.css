@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(131,131,250,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.nav_index_comprador{
+    width: 20vh;
+    padding: 3vh;
+    height: 100%;
+    position: fixed;
+    background-color: beige;
+    display: block;
+    border-radius: 0 20px 20px 0 ;
+}
+
+main{
+    margin-left: 280px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1190px) {
+    #nav_comprador{
+        display: none;
+    }
+}
